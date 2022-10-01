@@ -1,0 +1,43 @@
+.wrapper {
+  width: 100%;
+}
+
+.form {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+}
+
+.inputInner {
+  margin-right: 12px;
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+}
+
+.input {
+  min-height: 40px;
+  padding: 5px 15px;
+  margin-top: 10px;
+
+  border: 2px solid #000;
+  border-radius: 10px;
+}
+
+.btn {
+  min-height: 40px;
+  text-transform: uppercase;
+  font-weight: 500;
+  width: 100px;
+  border: 2px solid #000;
+  border-radius: 10px;
+
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.btn:hover {
+  background-color: rgb(0, 0, 0, 0.1);
+  transition: 0.3s;
+}
