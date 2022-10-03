@@ -1,4 +1,4 @@
-import React, { useRef, useState } from 'react';
+import React, { useRef } from 'react';
 import styles from './StepsForm.module.css';
 
 export const StepsForm = ({ toAddDistance }) => {
@@ -30,6 +30,7 @@ export const StepsForm = ({ toAddDistance }) => {
           <label htmlFor="date">Дата (ДД. ММ. ГГГГ)</label>
           <input
             name="date"
+            type="date"
             ref={dateRef}
             className={styles.input}
             maxLength={10}
@@ -37,7 +38,12 @@ export const StepsForm = ({ toAddDistance }) => {
         </div>
         <div className={styles.inputInner}>
           <label htmlFor="distance">Пройдено, км</label>
-          <input name="distance" ref={distRef} className={styles.input}></input>
+          <input
+            name="distance"
+            type="number"
+            ref={distRef}
+            className={styles.input}
+          ></input>
         </div>
 
         <button className={styles.btn}>ok</button>
